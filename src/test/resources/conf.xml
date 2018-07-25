@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<netty>
+		<port>8080</port>
+	</netty>
+	<spring>
+		<spring.path>classpath:spring-*.xml</spring.path>
+		<spring.mvc.path>classpath:servlet.xml</spring.mvc.path>
+	</spring>
+</conf>
+
