@@ -6,6 +6,8 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.mock.web.MockServletConfig;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.web.context.WebApplicationContext;
@@ -27,6 +29,8 @@ public class NettyBootstrap {
 	
 	private String confPath ; 
 	
+	private Logger logger = LoggerFactory.getLogger(NettyBootstrap.class) ; 
+	
 	public NettyBootstrap(String confPath){
 		this.confPath = confPath ; 
 	}
@@ -36,6 +40,7 @@ public class NettyBootstrap {
 			Configuration conf = ConfigurationParser.parse(confPath) ;
 			DispatcherServlet servlet = getDispatcherServlet(conf.getSpringConf()) ;
 			startBootstrap(servlet, conf.getNettyConf());
+			logger.info("server start port="+conf.getNettyConf().getPort());
 		} catch (ServletException e) {
 			e.printStackTrace();
 		} catch (ParserConfigurationException e) {
