@@ -40,7 +40,6 @@ public class NettyBootstrap {
 			Configuration conf = ConfigurationParser.parse(confPath) ;
 			DispatcherServlet servlet = getDispatcherServlet(conf.getSpringConf()) ;
 			startBootstrap(servlet, conf.getNettyConf());
-			logger.info("server start port="+conf.getNettyConf().getPort());
 		} catch (ServletException e) {
 			e.printStackTrace();
 		} catch (ParserConfigurationException e) {
@@ -63,6 +62,7 @@ public class NettyBootstrap {
 			         .bind(conf.getPort())
 			         .sync()
 			         .channel();
+			logger.info("server start port="+conf.getPort());
 			channel.closeFuture().sync() ; 
 		} catch (InterruptedException e) {
 			e.printStackTrace();
