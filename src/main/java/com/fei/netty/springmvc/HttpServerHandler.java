@@ -46,8 +46,13 @@ public class HttpServerHandler extends ChannelHandlerAdapter {
 				response.addHeader("requestId",requestId);
 			}
 			DispatcherServlet dispatcherServlet = getDispatcherServlet() ; 
-			InterfaceLog.logRequest(request) ; 
-			dispatcherServlet.service(request, response);
+			InterfaceLog.logRequest(request) ;
+			try{
+				dispatcherServlet.service(request, response);
+			}catch(Exception e){
+				e.printStackTrace();
+				response.setStatus(500);
+			}
 			InterfaceLog.logResponse(request,response) ; 
 			DefaultFullHttpResponse nettyResponse = getResponse(response) ;  
 			ctx.writeAndFlush(nettyResponse).addListener(ChannelFutureListener.CLOSE) ; 
