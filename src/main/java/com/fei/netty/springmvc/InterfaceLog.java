@@ -8,10 +8,6 @@ import org.slf4j.LoggerFactory;
 
 public class InterfaceLog {
 	
-	static{
-		int t = 0 ; 
-		t++ ; 
-	}
 	
 	private static Logger logger = LoggerFactory.getLogger("com.fei.interface.log") ; 
 	
