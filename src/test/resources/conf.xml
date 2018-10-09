@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<conf>
-	<netty>
-		<port>8080</port>
-	</netty>
-	<spring>
-		<spring.path>classpath:spring-*.xml</spring.path>
-		<spring.mvc.path>classpath:servlet.xml</spring.mvc.path>
-	</spring>
-</conf>
-
+<bean>
+    <bean name="nettyConf">
+        <property name="port">8080</property>
+        <property name="sessionInvalidTime">1800000</property>
+        <property name="sessionCheckInterval">60000</property>
+    </bean>
+    <bean name="springConf">
+       <property name="springPath">classpath:spring-*.xml</property>
+        <property name="springMvcPath">classpath:servlet.xml</property>
+    </bean>
+</bean>

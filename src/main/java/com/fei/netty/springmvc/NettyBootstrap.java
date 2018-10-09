@@ -4,26 +4,28 @@ import java.io.IOException;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.xml.parsers.ParserConfigurationException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.mock.web.MockServletConfig;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
-import org.xml.sax.SAXException;
 
 import com.fei.netty.springmvc.conf.Configuration;
-import com.fei.netty.springmvc.conf.ConfigurationParser;
 import com.fei.netty.springmvc.conf.NettyConf;
 import com.fei.netty.springmvc.conf.SpringConf;
+import com.fei.netty.springmvc.session.SessionManager;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import util.data.DataParserBuilder;
 
 public class NettyBootstrap {
 	
@@ -37,14 +39,13 @@ public class NettyBootstrap {
 	
 	public void start(){
 		try {
-			Configuration conf = ConfigurationParser.parse(confPath) ;
+//			Configuration conf = ConfigurationParser.parse(confPath) ;
+			ResourceLoader rl = new PathMatchingResourcePatternResolver() ; 
+			Resource resource = rl.getResource(confPath) ;
+			Configuration conf = DataParserBuilder.getInstance().getXmlDataParser().parse(Configuration.class, resource.getInputStream()) ;
 			DispatcherServlet servlet = getDispatcherServlet(conf.getSpringConf()) ;
 			startBootstrap(servlet, conf.getNettyConf());
 		} catch (ServletException e) {
-			e.printStackTrace();
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -62,6 +63,7 @@ public class NettyBootstrap {
 			         .bind(conf.getPort())
 			         .sync()
 			         .channel();
+			SessionManager.getInstance().sessionStart(conf);
 			logger.info("server start port="+conf.getPort());
 			channel.closeFuture().sync() ; 
 		} catch (InterruptedException e) {

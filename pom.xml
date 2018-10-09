@@ -17,6 +17,7 @@
 
 
 	<dependencies>
+	    <!-- https://github.com/1401826426/util -->
 		<dependency>
 			<groupId>com.fei</groupId>
 			<artifactId>util</artifactId>

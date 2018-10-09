@@ -3,6 +3,7 @@ package com.fei.test;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,5 +36,14 @@ public class TestController {
 		response.addCookie(new Cookie("test", "test"));
 		return test; 
 	}
+	
+	@RequestMapping(value = "/test/session" , method = RequestMethod.GET)
+	public Test testSession(HttpServletRequest request,HttpServletResponse response,HttpSession session){
+		Test test = new Test() ;
+		test.setHandler(session.getId());
+		return test; 
+	}
+	
+
 	
 }

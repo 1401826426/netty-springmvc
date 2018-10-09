@@ -9,10 +9,15 @@ import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.web.servlet.DispatcherServlet;
+
+import com.fei.netty.springmvc.session.SessionConstans;
+import com.fei.netty.springmvc.session.SessionCookie;
+import com.fei.netty.springmvc.session.SessionManager;
 
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerAdapter;
@@ -53,6 +58,9 @@ public class HttpServerHandler extends ChannelHandlerAdapter {
 				e.printStackTrace();
 				response.setStatus(500);
 			}
+			HttpSession session = request.getSession() ;
+			Cookie cookie = new SessionCookie(session) ; 
+			response.addCookie(cookie);
 			InterfaceLog.logResponse(request,response) ; 
 			DefaultFullHttpResponse nettyResponse = getResponse(response) ;  
 			ctx.writeAndFlush(nettyResponse).addListener(ChannelFutureListener.CLOSE) ; 
@@ -104,19 +112,35 @@ public class HttpServerHandler extends ChannelHandlerAdapter {
 			nettyRequest.content().readBytes(bytes) ; 
 			request.setContent(bytes);
 		}
-		List<Cookie> list = new ArrayList<Cookie>() ; 
+		List<Cookie> list = new ArrayList<Cookie>() ;
+		String sessionId = null ; 
 		String cookiestr = headers.get(Names.COOKIE) ;
 		if(cookiestr != null){
 			Set<io.netty.handler.codec.http.Cookie> set = CookieDecoder.decode(cookiestr) ;
 			if(set != null){
 				for(io.netty.handler.codec.http.Cookie c:set){
 					CookieAdapter adpter = new CookieAdapter(c); 
+					if(c.getName().equals(SessionConstans.SESSION_ID_COOKIE_NAME)){
+						sessionId = c.getValue() ; 
+					}
 					list.add(adpter) ; 
 				}
 			}
 			Cookie[] cookies = list.toArray(new Cookie[list.size()]) ;
 			request.setCookies(cookies);
 		}
+		HttpSession session = null  ; 
+		if(sessionId != null){
+			session = SessionManager.getInstance().get(sessionId,false) ;
+			if(session == null){
+				session = SessionManager.getInstance().create() ;
+			}else{
+				SessionManager.getInstance().access(session.getId()); 
+			}
+		}else{
+			session = SessionManager.getInstance().create() ; 
+		}
+		request.setSession(session);
 		return request;
 	}
 	
