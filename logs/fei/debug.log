@@ -1,0 +1,240 @@
+[Fei] 2018-11-09 17:29:27,841 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Nov 09 17:29:27 CST 2018]; root of context hierarchy>
+[Fei] 2018-11-09 17:29:27,986 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [F:\netty-spring\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2018-11-09 17:29:28,366 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2018-11-09 17:29:28,366 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2018-11-09 17:29:28,374 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:28 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:28,375 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2018-11-09 17:29:29,672 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 17:29:29,676 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 17:29:29,678 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2018-11-09 17:29:30,362 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:28 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:30,476 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:28 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:30,800 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2433 ms>
+[Fei] 2018-11-09 17:29:32,146 [ WARN] [Slf4JLogger.java                          136] - <Failed to find the current process ID; using a random value: 63041>
+[Fei] 2018-11-09 17:29:32,453 [ INFO] [NettyBootstrapV2.java                      69] - <server start port=8080>
+[Fei] 2018-11-09 17:29:54,568 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Nov 09 17:29:54 CST 2018]; root of context hierarchy>
+[Fei] 2018-11-09 17:29:54,704 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [F:\netty-spring\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2018-11-09 17:29:55,091 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2018-11-09 17:29:55,091 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2018-11-09 17:29:55,100 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:55 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:55,101 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2018-11-09 17:29:56,386 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 17:29:56,389 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 17:29:56,391 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2018-11-09 17:29:57,346 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:55 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:57,474 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 17:29:55 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 17:29:57,786 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2694 ms>
+[Fei] 2018-11-09 17:29:59,136 [ WARN] [Slf4JLogger.java                          136] - <Failed to find the current process ID; using a random value: 34697>
+[Fei] 2018-11-09 17:29:59,430 [ INFO] [NettyBootstrapV2.java                      69] - <server start port=8080>
+[Fei] 2018-11-09 19:22:57,271 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Nov 09 19:22:57 CST 2018]; root of context hierarchy>
+[Fei] 2018-11-09 19:22:57,419 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [F:\netty-spring\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2018-11-09 19:22:57,782 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2018-11-09 19:22:57,783 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2018-11-09 19:22:57,790 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:22:57 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:22:57,791 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2018-11-09 19:22:59,173 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:22:59,176 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:22:59,179 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2018-11-09 19:22:59,852 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:22:57 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:22:59,964 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:22:57 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:23:00,312 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2529 ms>
+[Fei] 2018-11-09 19:23:01,696 [ WARN] [Slf4JLogger.java                          136] - <Failed to find the current process ID; using a random value: 3493>
+[Fei] 2018-11-09 19:23:02,002 [ INFO] [NettyBootstrapV2.java                      69] - <server start port=8080>
+[Fei] 2018-11-09 19:23:09,102 [ WARN] [Slf4JLogger.java                          151] - <An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.>
+java.lang.ClassCastException: com.fei.netty.springmvc.http.DefaultHttpServletRequest cannot be cast to javax.servlet.http.HttpServletResponse
+	at com.fei.netty.springmvc.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:30)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:748)
+[Fei] 2018-11-09 19:36:16,957 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Nov 09 19:36:16 CST 2018]; root of context hierarchy>
+[Fei] 2018-11-09 19:36:17,102 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [F:\netty-spring\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2018-11-09 19:36:17,510 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2018-11-09 19:36:17,511 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2018-11-09 19:36:17,519 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:36:17 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:36:17,520 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2018-11-09 19:36:18,757 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:36:18,760 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:36:18,762 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2018-11-09 19:36:19,368 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:36:17 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:36:19,498 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:36:17 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:36:19,832 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2320 ms>
+[Fei] 2018-11-09 19:36:21,385 [ WARN] [Slf4JLogger.java                          136] - <Failed to find the current process ID; using a random value: 64944>
+[Fei] 2018-11-09 19:36:21,716 [ INFO] [NettyBootstrapV2.java                      74] - <server start port=8080>
+[Fei] 2018-11-09 19:36:27,048 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:36:27,057 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:36:27,070 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:36:36,576 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:36:36,588 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:36:36,602 [ERROR] [ErrorLog.java                              20] - <com.fei.netty.springmvc.HttpServerHanderV2#channelRead#34
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.MessageToMessageDecoder#channelRead#103
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.handler.codec.ByteToMessageDecoder#channelRead#154
+io.netty.channel.ChannelHandlerInvokerUtil#invokeChannelReadNow#74
+io.netty.channel.DefaultChannelHandlerInvoker#invokeChannelRead#138
+io.netty.channel.DefaultChannelHandlerContext#fireChannelRead#320
+io.netty.channel.DefaultChannelPipeline#fireChannelRead#846
+io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe#read#127
+io.netty.channel.nio.NioEventLoop#processSelectedKey#485
+io.netty.channel.nio.NioEventLoop#processSelectedKeysOptimized#452
+io.netty.channel.nio.NioEventLoop#run#346
+io.netty.util.concurrent.SingleThreadEventExecutor$5#run#794
+java.lang.Thread#run#748
+>
+[Fei] 2018-11-09 19:40:06,547 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Nov 09 19:40:06 CST 2018]; root of context hierarchy>
+[Fei] 2018-11-09 19:40:06,676 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [F:\netty-spring\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2018-11-09 19:40:07,038 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2018-11-09 19:40:07,039 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2018-11-09 19:40:07,048 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:40:07 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:40:07,049 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2018-11-09 19:40:08,154 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:40:08,156 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2018-11-09 19:40:08,158 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2018-11-09 19:40:08,793 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:40:07 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:40:08,914 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Nov 09 19:40:07 CST 2018]; parent: Root WebApplicationContext>
+[Fei] 2018-11-09 19:40:09,225 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2185 ms>
+[Fei] 2018-11-09 19:40:10,653 [ WARN] [Slf4JLogger.java                          136] - <Failed to find the current process ID; using a random value: 57170>
+[Fei] 2018-11-09 19:40:10,962 [ INFO] [NettyBootstrapV2.java                      74] - <server start port=8080>
+[Fei] 2018-11-09 19:40:19,900 [ WARN] [DispatcherServlet.java                   1172] - <No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name ''>

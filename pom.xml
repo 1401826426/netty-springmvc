@@ -8,10 +8,11 @@
 	<properties>
 		<spring.version>4.3.8.RELEASE</spring.version>
 		<netty.version>5.0.0.Alpha1</netty.version>
-		<javax.version>3.1.0</javax.version>
+		<javax.version>3.0.1</javax.version>
 		<jackson.version>2.9.0</jackson.version>
 		<slf4j-log4j12.version>1.6.1</slf4j-log4j12.version>
 		<fei.util.version>0.0.1-SNAPSHOT</fei.util.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -53,11 +54,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
 		<dependency>
@@ -79,7 +76,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${javax.version}</version>
-			<!-- <scope>provided</scope> -->
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -109,7 +106,12 @@
 			<version>${slf4j-log4j12.version}</version>
 		</dependency>
 
-
+<!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper.version}</version>
+			</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-resolver -->
 	</dependencies>

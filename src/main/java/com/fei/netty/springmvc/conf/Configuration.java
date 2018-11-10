@@ -5,6 +5,8 @@ public class Configuration {
 	private NettyConf nettyConf;
 	
 	private SpringConf springConf ;
+	
+	private RpcConf rpcConf ; 
 
 	public NettyConf getNettyConf() {
 		return nettyConf;
@@ -20,6 +22,16 @@ public class Configuration {
 
 	public void setSpringConf(SpringConf springConf) {
 		this.springConf = springConf;
+	}
+
+	public RpcConf getRpcConf() {
+		return rpcConf;
+	}
+
+	public void setRpcConf(RpcConf rpcConf) {
+		this.rpcConf = rpcConf;
 	} 
+	
+	
 	
 }

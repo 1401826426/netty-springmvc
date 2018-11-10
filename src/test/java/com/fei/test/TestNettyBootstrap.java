@@ -1,6 +1,6 @@
 package com.fei.test;
 
-import com.fei.netty.springmvc.NettyBootstrap;
+import com.fei.netty.springmvc.deprecated.NettyBootstrap;
 
 public class TestNettyBootstrap {
 	
