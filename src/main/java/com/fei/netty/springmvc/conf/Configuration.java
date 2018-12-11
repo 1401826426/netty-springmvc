@@ -1,6 +1,8 @@
 package com.fei.netty.springmvc.conf;
 
-public class Configuration {
+import io.netty.buffer.ByteBufAllocator;
+
+public class Configuration implements Initializer{
 	
 	private NettyConf nettyConf;
 	
@@ -32,6 +34,15 @@ public class Configuration {
 		this.rpcConf = rpcConf;
 	} 
 	
-	
+	public ByteBufAllocator getAllocator(){
+		return nettyConf.getByteBufAllocator() ; 
+	}
+
+	@Override
+	public void ini() {
+		this.nettyConf.ini();  
+		this.rpcConf.ini();  
+		this.springConf.ini();
+	}
 	
 }

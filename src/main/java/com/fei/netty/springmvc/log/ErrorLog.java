@@ -13,9 +13,11 @@ public class ErrorLog {
 
 	public static void error(Throwable cause){
 		StackTraceElement[] elements = cause.getStackTrace() ;
-		StringBuilder sb = new StringBuilder("") ; 
+		StringBuilder sb = new StringBuilder("") ;
+		sb.append(cause.getLocalizedMessage() + "\t"+cause.getMessage() + "\n") ; 
 		for(StackTraceElement element:elements){
-			sb.append(element.getClassName() + "#" + element.getMethodName() + "#" + element.getLineNumber() + "\n") ; 
+			sb.append("\t" + element.toString() + "\n") ;  
+//			sb.append("\t" + element.getMethodName() + "(" + element.getClassName()+".java:"+element.getLineNumber()+")\n") ; 
 		}
 		logger.error(sb.toString());
 	}

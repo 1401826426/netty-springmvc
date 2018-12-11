@@ -59,7 +59,7 @@ public class NettyBootstrap {
 			ServerBootstrap bootstrap = new ServerBootstrap() ; 
 			Channel channel = bootstrap.group(bossGroup,workerGroup)
 			         .channel(NioServerSocketChannel.class)
-			         .childHandler(new InitChannelHandler(dispatcherServlet)) 
+			         .childHandler(new InitChannelHandler()) 
 			         .bind(conf.getPort())
 			         .sync()
 			         .channel();

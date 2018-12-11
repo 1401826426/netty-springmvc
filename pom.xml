@@ -13,6 +13,9 @@
 		<slf4j-log4j12.version>1.6.1</slf4j-log4j12.version>
 		<fei.util.version>0.0.1-SNAPSHOT</fei.util.version>
 		<zookeeper.version>3.4.6</zookeeper.version>
+		<mabatis.version>3.4.0</mabatis.version>
+		<spring.mabatis.verssion>1.3.0</spring.mabatis.verssion>
+		<jedis.version>2.8.0</jedis.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -55,6 +58,24 @@
 			<version>${spring.version}</version>
 		</dependency>
 		
+		<!-- mybatis 組件 -->
+			<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mabatis.version}</version>
+			</dependency>
+
+			<!-- mybatis.spring組件 -->
+			<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${spring.mabatis.verssion}</version>
+			</dependency>
+		
+		
+		
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
 		<dependency>
@@ -76,7 +97,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${javax.version}</version>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 
 
@@ -114,6 +135,13 @@
 			</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-resolver -->
+		
+		
+		<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis.version}</version>
+			</dependency>
 	</dependencies>
 
 </project>

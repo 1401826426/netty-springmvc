@@ -9,4 +9,8 @@
        <property name="springPath">classpath:spring-*.xml</property>
         <property name="springMvcPath">classpath:servlet.xml</property>
     </bean>
+     <bean name="rpcConf">
+       <property name="maxDataLen">1024</property>
+        <property name="responseTimeOut">60000</property>
+    </bean>
 </bean>

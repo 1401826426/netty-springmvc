@@ -1,6 +1,6 @@
 package com.fei.netty.springmvc.conf;
 
-public class SpringConf {
+public class SpringConf implements Initializer{
 	
 	private String springPath ; 
 	
@@ -20,6 +20,11 @@ public class SpringConf {
 
 	public void setSpringMvcPath(String springMvcPath) {
 		this.springMvcPath = springMvcPath;
+	}
+
+	@Override
+	public void ini() {
+		
 	} 
 	
 	

@@ -18,11 +18,12 @@ import com.fei.netty.springmvc.conf.Configuration;
 import com.fei.netty.springmvc.conf.NettyConf;
 import com.fei.netty.springmvc.conf.SpringConf;
 import com.fei.netty.springmvc.deprecated.NettyBootstrap;
+import com.fei.netty.springmvc.handler.InitChannelHandlerV2;
 import com.fei.netty.springmvc.http.DefaultHttpServletResponseFactory;
 import com.fei.netty.springmvc.http.DefaultServletConfig;
 import com.fei.netty.springmvc.http.DefaultServletContext;
 import com.fei.netty.springmvc.http.session.SessionManager;
-import com.fei.netty.springmvc.rpc.data.response.RpcHttpResponseFactory;
+import com.fei.netty.springmvc.rpc.common.RpcHttpResponseFactory;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -32,7 +33,7 @@ import util.data.DataParserBuilder;
 
 public class NettyBootstrapV2 {
 	
-private String confPath ; 
+	private String confPath ; 
 	
 	private Logger logger = LoggerFactory.getLogger(NettyBootstrap.class) ; 
 	
@@ -70,7 +71,6 @@ private String confPath ;
 			         .bind(conf.getPort())
 			         .sync()
 			         .channel();
-			
 			logger.info("server start port="+conf.getPort());
 			channel.closeFuture().sync() ; 
 		} catch (InterruptedException e) {
