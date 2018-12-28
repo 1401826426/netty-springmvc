@@ -413,30 +413,38 @@ public class NettyConf implements Initializer{
 
 	@Override
 	public void ini() {
-		switch(allocator){
-		case "pool":
-			this.byteBufAllocator = new PooledByteBufAllocator() ;
-			break; 
-		case "directUnpool":
+		if(allocator == null){
 			this.byteBufAllocator = new UnpooledByteBufAllocator(true) ;
-			break ; 
-		case "unpool":
-			this.byteBufAllocator = new UnpooledByteBufAllocator(false) ;
-			break ; 
-		default:
-			this.byteBufAllocator = new PooledByteBufAllocator() ;
-			break ; 
+		}else{
+			switch(allocator){
+			case "pool":
+				this.byteBufAllocator = new PooledByteBufAllocator() ;
+				break; 
+			case "directUnpool":
+				this.byteBufAllocator = new UnpooledByteBufAllocator(true) ;
+				break ; 
+			case "unpool":
+				this.byteBufAllocator = new UnpooledByteBufAllocator(false) ;
+				break ; 
+			default:
+				this.byteBufAllocator = new PooledByteBufAllocator() ;
+				break ; 
+			}
 		}
 		
-		switch(rcvBufAllocator){
-		case "adaptive":	
-			this.recvByteBufAllocator = new AdaptiveRecvByteBufAllocator(adaptiveRecvBufAllocatorMinimum,adaptiveRecvBufAllocatorInitial,adaptiveRecvBufAllocatorMaximum) ; 
-			break ; 
-		case "fixed":
-			this.recvByteBufAllocator = new FixedRecvByteBufAllocator(fixedRecvByteBufAllocatorBufSize) ;
-			break ; 
-		default:
+		if(recvByteBufAllocator == null){
 			this.recvByteBufAllocator = AdaptiveRecvByteBufAllocator.DEFAULT;
+		}else{
+			switch(rcvBufAllocator){
+			case "adaptive":	
+				this.recvByteBufAllocator = new AdaptiveRecvByteBufAllocator(adaptiveRecvBufAllocatorMinimum,adaptiveRecvBufAllocatorInitial,adaptiveRecvBufAllocatorMaximum) ; 
+				break ; 
+			case "fixed":
+				this.recvByteBufAllocator = new FixedRecvByteBufAllocator(fixedRecvByteBufAllocatorBufSize) ;
+				break ; 
+			default:
+				this.recvByteBufAllocator = AdaptiveRecvByteBufAllocator.DEFAULT;
+			}
 		}
 		
 	}

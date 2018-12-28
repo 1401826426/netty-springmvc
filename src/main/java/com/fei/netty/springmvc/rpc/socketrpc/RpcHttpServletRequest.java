@@ -277,7 +277,7 @@ public class RpcHttpServletRequest implements HttpServletRequest{
 
 	@Override
 	public String getMethod() {
-		return null;
+		return "GET";
 	}
 
 	@Override

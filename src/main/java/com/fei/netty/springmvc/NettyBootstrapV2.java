@@ -17,7 +17,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 import com.fei.netty.springmvc.conf.Configuration;
 import com.fei.netty.springmvc.conf.NettyConf;
 import com.fei.netty.springmvc.conf.SpringConf;
-import com.fei.netty.springmvc.deprecated.NettyBootstrap;
 import com.fei.netty.springmvc.handler.InitChannelHandlerV2;
 import com.fei.netty.springmvc.http.DefaultHttpServletResponseFactory;
 import com.fei.netty.springmvc.http.DefaultServletConfig;
@@ -35,7 +34,7 @@ public class NettyBootstrapV2 {
 	
 	private String confPath ; 
 	
-	private Logger logger = LoggerFactory.getLogger(NettyBootstrap.class) ; 
+	private Logger logger = LoggerFactory.getLogger(NettyBootstrapV2.class) ; 
 	
 	public NettyBootstrapV2(String confPath){
 		this.confPath = confPath ; 

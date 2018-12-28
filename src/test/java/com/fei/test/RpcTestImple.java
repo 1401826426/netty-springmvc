@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 public class RpcTestImple implements RpcTest{
 
 	@Override
-	public void test() {
+	public boolean test() {
 		System.err.println("=============test================") ; 
+		return true ; 
 	}
 
 }

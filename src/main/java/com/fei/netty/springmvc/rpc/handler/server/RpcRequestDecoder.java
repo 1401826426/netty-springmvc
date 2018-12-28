@@ -41,7 +41,7 @@ public class RpcRequestDecoder extends ByteToMessageDecoder{
 			}
 			int requestId = in.readInt() ; 
 			byte[] cmdBytes = in.readBytes(32).array() ;
-			String cmd = new String(cmdBytes) ;
+			String cmd = new String(cmdBytes).trim() ;
 			ByteBuf data = in.readBytes(dataLen-36) ; 
 			RpcRequest rpcRequest = new RpcRequest(requestId,cmd,data) ; 
 			RpcLog.logRpcRequest(rpcRequest);
