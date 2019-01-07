@@ -11,6 +11,6 @@
     </bean>
      <bean name="rpcConf">
        <property name="maxDataLen">1024</property>
-        <property name="responseTimeOut">60000</property>
+        <property name="responseTimeOut">60</property>
     </bean>
 </bean>

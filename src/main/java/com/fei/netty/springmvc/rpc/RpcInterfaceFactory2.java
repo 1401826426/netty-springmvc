@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.lang.reflect.Type;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.fei.netty.springmvc.conf.Configuration;
 import com.fei.netty.springmvc.converter.Converter;
@@ -34,6 +36,16 @@ public class RpcInterfaceFactory2 {
 	
 	private ByteBufAllocator allocator ; 
 	
+	private static Set<String> commonMethod = new HashSet<>() ; 
+	
+	static{
+		commonMethod.add("hashcode") ; 
+		commonMethod.add("toString") ; 
+		commonMethod.add("wait") ; 
+		commonMethod.add("notify") ; 
+		commonMethod.add("notifyAll") ;
+	}
+	
 	public RpcInterfaceFactory2(Configuration conf){
 		super();
 		this.generator = conf.getRpcConf().getGenerator() ; 
@@ -43,6 +55,7 @@ public class RpcInterfaceFactory2 {
 		this.allocator = conf.getAllocator() ; 
 	}
 
+	
 	private Sender2 getSender(Server server){
 		return senderFactory.getSender(server) ; 
 	}
@@ -57,54 +70,65 @@ public class RpcInterfaceFactory2 {
 		
 		private Sender2 sender ; 
 
+		private Object obj = new Object() ; 
+		
 		public RpcInterfaceProxyHandler(Sender2 sender){
 			this.sender = sender ; 
 		}
 
+		
 		@Override
 		public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-			boolean aync = asynMethod(method) ; 
-			if(aync){			
-				method = getRealMethod(method) ; 		
-			}
-			String url = generator.generate(method) ;
-			Type type = method.getGenericReturnType()  ;
-			byte[] bytes = generateArgBytes(args,method) ;
-			ByteBuf data = allocator.buffer(bytes.length) ; 
-			RpcRequest request = new RpcRequest(idGenerator.getRequestId(), url, data) ;
-			RFuture<RpcResponse> future = sender.sendRequest(request) ; 
-			if(aync){
-				@SuppressWarnings("rawtypes")
-				RpcCallBack callBack = detectCallBack(type,args) ;
-				if(callBack != null){
-					future.addListener(new RFutureListener<RFuture<RpcResponse>>() {
-						
-						@SuppressWarnings("unchecked")
-						@Override
-						public void onComplete(RFuture<RpcResponse> t) {
-							if(t.isSuccess()){
-								RpcResponse response = t.getNow() ;
-								if(response == null){
-									callBack.error(new RuntimeException("illeagal timeout"));
-								}
-								Object obj;
-								try {
-									obj = converter.readValue(response.getData().array(), type);
-									callBack.success(obj);
-								} catch (ConverterException e) {
-									callBack.error(e);
-								} 
-							}else{
-								callBack.error(t.cause());
-							}
-							
-						}
-					});
+			try{
+				if(commonMethod.contains(method.getName())){
+					return method.invoke(obj, args) ; 
 				}
-			}else{
-				RpcResponse response = future.get() ;
-				Object obj = converter.readValue(response.getData().array(), type) ;
-				return obj ; 
+				boolean aync = asynMethod(method) ; 
+				if(aync){			
+					method = getRealMethod(method) ; 		
+				}
+				String url = generator.generate(method) ;
+				Type type = method.getGenericReturnType()  ;
+				byte[] bytes = generateArgBytes(args,method) ;
+				ByteBuf data = allocator.buffer(bytes.length) ; 
+				RpcRequest request = new RpcRequest(idGenerator.getRequestId(), url, data) ;
+				RFuture<RpcResponse> future = sender.sendRequest(request) ; 
+				if(aync){
+					@SuppressWarnings("rawtypes")
+					RpcCallBack callBack = detectCallBack(type,args) ;
+					if(callBack != null){
+						future.addListener(new RFutureListener<RFuture<RpcResponse>>() {
+							
+							@SuppressWarnings("unchecked")
+							@Override
+							public void onComplete(RFuture<RpcResponse> t) {
+								if(t.isSuccess()){
+									RpcResponse response = t.getNow() ;
+									if(response == null){
+										callBack.error(new RuntimeException("illeagal timeout"));
+									}
+									Object obj;
+									try {
+										obj = converter.readValue(response.getData().array(), type);
+										callBack.success(obj);
+									} catch (ConverterException e) {
+										callBack.error(e);
+									} 
+								}else{
+									callBack.error(t.cause());
+								}
+								
+							}
+						});
+					}
+				}else{
+					RpcResponse response = future.get() ;
+					Object obj = converter.readValue(response.getData().array(), type) ;
+					return obj ; 
+				}
+				
+			}catch(Throwable t){
+				t.printStackTrace();
 			}
 			return null ; 
 		}

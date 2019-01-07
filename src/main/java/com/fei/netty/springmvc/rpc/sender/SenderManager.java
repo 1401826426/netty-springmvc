@@ -36,7 +36,9 @@ public class SenderManager {
 			@Override
 			public void run(Timeout timeout) throws Exception {
 				RPromise<Response> f = promises.remove(request.getId()) ;
-				f.setFailure(new TimeOutException()) ; 
+				if(f != null){	
+					f.setFailure(new TimeOutException()) ; 
+				}
 			}
 		}, conf.getResponseTimeOut(), TimeUnit.SECONDS) ;
 		request.send() ; 
