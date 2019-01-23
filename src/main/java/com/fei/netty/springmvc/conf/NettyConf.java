@@ -37,11 +37,18 @@ public class NettyConf implements Initializer{
     private int soSndBuf ;
     private boolean soKeepAlive ; 
     private boolean soBroadcast ; 
+    //是否自动读
     private boolean autoRead ; 
     private boolean allowHalfClosure ; 
+    //在将数据写入循环数组时,如果等待的数据小于这个值，会将ChannelOutboundBuffer的writebale设置0
+    //并调用fireChannelWritableilityChanged
     private int writeBufferLowWaterMask ; 
+    //在将数据写入循环数组时,如果等待的数据大于当前值时,会将ChannelOutboundBuffer的writebale设置为1
+    //并调用fireChannelWritableilityChanged
     private int writeBufferHignWaterMask ; 
+    //从循环数组写入到网络流中一次从ByteBuf中一次最大的flush次数
     private int writeSpinCount ;
+    //在NIOByteUnsafe和NioMessageUnsafe中用到
     private int maxMessagesPerRead ; 
     private int connectTimeOutMills ; 
      
