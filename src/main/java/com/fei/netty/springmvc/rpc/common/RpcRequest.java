@@ -8,15 +8,25 @@ public class RpcRequest {
 	
 	private String command ; 
 	
-	private ByteBuf data ;	
+	private byte[] data ;	
 	
-	public RpcRequest(int requestId, String command, ByteBuf data) {
+	private Object[] args ; 
+	
+	public RpcRequest(int requestId, String command, byte[] data) {
 		super();
 		this.requestId = requestId;
 		this.command = command;
 		this.data = data;
 	}
 
+	
+	public RpcRequest(int requestId, String command, ByteBuf data) {
+		super();
+		this.requestId = requestId;
+		this.command = command;
+		this.data = new byte[data.readableBytes()];
+		data.readBytes(this.data) ; 
+	}
 	
 	public int getRequestId() {
 		return requestId;
@@ -36,15 +46,30 @@ public class RpcRequest {
 		this.command = command;
 	}
 
-	public ByteBuf getData() {
+	public byte[] getData() {
 		return data;
 	}
 
-	public void setData(ByteBuf data) {
+	public void setData(byte[] data) {
 		this.data = data;
 	}
-
 	
+	public Object[] getArgs() {
+		return args;
+	}
+	
+	public void setArgs(Object[] args) {
+		this.args = args;
+	}
+
+	public Object getArgs(int index){
+		return args[index] ; 
+	}
+
+
+	public byte[] getBytes() {
+		return data;
+	}
 	
 	
 	

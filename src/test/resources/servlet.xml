@@ -15,6 +15,9 @@
 	    <mvc:return-value-handlers>
 	        <bean class="com.fei.netty.springmvc.rpc.spring.mvc.RpcHandlerMethodReturnValueHandler"/>
 	    </mvc:return-value-handlers>
+	    <mvc:argument-resolvers>
+	        <bean class="com.fei.netty.springmvc.rpc.spring.mvc.RpcHandlerMethodArgumentResolver"/>
+	    </mvc:argument-resolvers>
 	</mvc:annotation-driven>
 	
 	<mvc:view-resolvers>

@@ -1,6 +1,8 @@
 package com.fei.netty.springmvc.conf;
 
 import com.fei.netty.springmvc.converter.Converter;
+import com.fei.netty.springmvc.converter.MethodParameterConverter;
+import com.fei.netty.springmvc.converter.fackson.DataNodeMethodParameterConverter;
 import com.fei.netty.springmvc.converter.fackson.FackJsonConverter;
 import com.fei.netty.springmvc.rpc.common.DefaultRequestIdGenerator;
 import com.fei.netty.springmvc.rpc.common.RequestIdGenerator;
@@ -18,6 +20,8 @@ public class RpcConf implements Initializer{
 	
 	private UrlGenerator generator ;
 	
+	private MethodParameterConverter methodParameterConverter ; 
+	
 	private NettySenderFactory senderFactory ;
 	
 	private RequestIdGenerator idGenerator ;
@@ -28,6 +32,12 @@ public class RpcConf implements Initializer{
 
 	public void setMaxDataLen(int maxDataLen) {
 		this.maxDataLen = maxDataLen;
+	}
+	
+	
+
+	public void setMethodParameterConverter(MethodParameterConverter methodParameterConverter) {
+		this.methodParameterConverter = methodParameterConverter;
 	}
 
 	public int getResponseTimeOut() {
@@ -54,13 +64,19 @@ public class RpcConf implements Initializer{
 		return idGenerator;
 	}
 
-	@Override
+	
+	public MethodParameterConverter getMethodParameterConverter() {
+		return this.methodParameterConverter ; 
+	}
+
 	public void ini() {
 		this.generator = new RpcMethodUrlGenerator() ; 
 		this.converter = new FackJsonConverter() ; 
 		this.senderFactory = new NettySenderFactory(this) ;
 		this.idGenerator = new DefaultRequestIdGenerator() ;   
+		this.methodParameterConverter = new DataNodeMethodParameterConverter() ; 
 	}
+
 	
 	
 	

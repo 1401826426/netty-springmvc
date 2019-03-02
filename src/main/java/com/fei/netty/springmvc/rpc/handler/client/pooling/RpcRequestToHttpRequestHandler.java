@@ -22,7 +22,7 @@ public class RpcRequestToHttpRequestHandler extends MessageToMessageEncoder<RpcR
 		FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1,HttpMethod.POST,path) ; 
 		request.headers().set(HttpHeaders.Names.CONTENT_TYPE,"application/json") ;
 		request.headers().set(REQUEST_ID_HEAD,rpcRequest.getRequestId()) ; 
-		byte[] bytes = rpcRequest.getData().array() ; 
+		byte[] bytes = rpcRequest.getData(); 
 		request.headers().set(HttpHeaders.Names.CONTENT_LENGTH,bytes.length) ; 
 		request.content().writeBytes(rpcRequest.getData()) ;  
 		out.add(request) ; 

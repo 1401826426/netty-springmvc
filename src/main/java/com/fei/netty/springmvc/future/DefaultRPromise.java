@@ -178,6 +178,9 @@ public class DefaultRPromise<V> implements RPromise<V>{
 	}
 	
 	private void notifyListeners(){
+//		RuntimeException e = new RuntimeException("abcd"); 
+//		e.printStackTrace();
+//		System.out.println(this.listeners);
 		for(RFutureListener<RFuture<V>> listener:this.listeners){
 			listener.onComplete(this);
 		}

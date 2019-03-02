@@ -10,11 +10,11 @@ import java.util.List;
 
 public abstract class AbstractExecutor implements Executor{
 	
-	protected abstract Connection getConnection() ; 
+	protected abstract Connection getConnection() throws SQLException; 
 	
-	protected abstract void releaseConn(Connection connection)  ; 
+	protected abstract void releaseConn(Connection connection) throws SQLException ; 
 
-	protected abstract <T> ResultSetHandler<T> getResultSetHandler() ; 
+	protected abstract <T> ResultSetHandler getResultSetHandler() ; 
 	
 	
     public <T> T query(String sql,List<Param> params) throws SQLException{
@@ -23,14 +23,14 @@ public abstract class AbstractExecutor implements Executor{
 	
 	
 	@Override
-	public <T> T query(String sql, List<Param> params,ResultSetHandler<T> handler) throws SQLException {
+	public <T> T query(String sql, List<Param> params,ResultSetHandler handler) throws SQLException {
 		Connection connection = null; 
 		try {
 			connection = getConnection() ; 
 			PreparedStatement preparedStatement = connection.prepareStatement(sql) ;
 			fullfillStatement(preparedStatement,params) ;
 			ResultSet rs = preparedStatement.executeQuery() ; 
-			return handler.execute(rs) ; 
+			return handler.execute(rs,null) ; 
 		} finally {
 			releaseConn(connection) ; 
 		}

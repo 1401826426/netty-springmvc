@@ -12,7 +12,7 @@ public class RpcLog {
 	
 	public static void logRpcRequest(RpcRequest request){
 		StringBuilder sb = new StringBuilder("") ; 
-		sb.append(request.getRequestId() + "#" + request.getCommand() + "#" + request.getData().readableBytes()) ; 
+		sb.append(request.getRequestId() + "#" + request.getCommand() + "#" + request.getData() == null ? 0 : request.getData().length) ; 
 		logger.info("rpcRequest#"+sb.toString());
 	}
 	

@@ -6,4 +6,6 @@ public class SpringConstants {
 	
 	public final static String RPC_VIEW_NAME = "rpcViewName" ;
 	
+	public final static String RPC_RESPONSE = "$rpcResponse" ; 
+	
 }

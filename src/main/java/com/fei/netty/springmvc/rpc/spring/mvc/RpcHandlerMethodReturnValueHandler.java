@@ -45,7 +45,7 @@ public class RpcHandlerMethodReturnValueHandler implements HandlerMethodReturnVa
 		RpcRequest rpcRequest =rpcHttpServletRequest.getRpcRequest() ;
 		int requestId = rpcRequest.getRequestId() ;
 		RpcResponse rpcResponse = new RpcResponse(requestId, byteBuf) ; 
-		mavContainer.getModel().addAttribute(SpringConstants.RPC_REQUEST, rpcResponse) ;
+		mavContainer.getModel().addAttribute(SpringConstants.RPC_RESPONSE, rpcResponse) ;
 		mavContainer.setViewName(SpringConstants.RPC_VIEW_NAME);
 	}
 

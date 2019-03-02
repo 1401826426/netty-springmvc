@@ -21,7 +21,7 @@ public class RpcView implements View{
 	@Override
 	public void render(Map<String, ?> model, HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
-		Object object = model.get(SpringConstants.RPC_REQUEST) ; 
+		Object object = model.get(SpringConstants.RPC_RESPONSE) ; 
 		if(object != null && object instanceof RpcResponse){
 			RpcResponse rpcResponse = (RpcResponse)object ; 
 			if(response instanceof RpcServletHttpResponse){

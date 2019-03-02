@@ -8910,3 +8910,1406 @@
 [Fei] 2019-01-05 15:07:54,505 [ INFO] [RpcLog.java                                22] - <rpcResponse#20#0>
 [Fei] 2019-01-05 15:07:54,508 [ INFO] [RpcLog.java                                16] - <rpcRequest#52#test@test#2>
 [Fei] 2019-01-05 15:07:54,510 [ INFO] [RpcLog.java                                22] - <rpcResponse#52#0>
+[Fei] 2019-02-25 19:29:38,010 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Mon Feb 25 19:29:38 CST 2019]; root of context hierarchy>
+[Fei] 2019-02-25 19:29:38,132 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-02-25 19:29:38,446 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-02-25 19:29:38,446 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-02-25 19:29:38,451 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Mon Feb 25 19:29:38 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-02-25 19:29:38,452 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-02-25 19:29:39,417 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-02-25 19:29:39,420 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-02-25 19:29:39,421 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-02-25 19:29:39,965 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Mon Feb 25 19:29:38 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-02-25 19:29:40,045 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Mon Feb 25 19:29:38 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-02-25 19:29:40,126 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-02-25 19:29:40,131 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-02-25 19:29:40,132 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-02-25 19:29:40,203 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 1757 ms>
+[Fei] 2019-02-25 19:29:41,684 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-02-25 19:29:57,427 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@1d0003d3>
+[Fei] 2019-02-25 19:29:57,997 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x98a7d70f]>
+[Fei] 2019-02-25 19:29:58,003 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x98a7d70f, /127.0.0.1:3732 => /127.0.0.1:8080]>
+[Fei] 2019-02-25 19:29:58,160 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-02-25 19:29:58,226 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-02-25 19:29:58,258 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 10:20:50,785 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Mar 01 10:20:50 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-01 10:20:50,887 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-01 10:20:51,169 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-01 10:20:51,169 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-01 10:20:51,173 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 10:20:51 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 10:20:51,174 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-01 10:20:51,999 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 10:20:52,001 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 10:20:52,002 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-01 10:20:52,475 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 10:20:51 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 10:20:52,570 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 10:20:51 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 10:20:52,653 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-01 10:20:52,660 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-01 10:20:52,661 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-01 10:20:52,755 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 1586 ms>
+[Fei] 2019-03-01 10:20:54,145 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-01 10:21:35,426 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@5566966c>
+[Fei] 2019-03-01 10:21:36,110 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x87286180]>
+[Fei] 2019-03-01 10:21:36,116 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x87286180, /127.0.0.1:11967 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 10:21:36,248 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 10:21:36,309 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 10:21:36,336 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 10:22:32,547 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@1d0003d3>
+[Fei] 2019-03-01 10:22:33,231 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x39c8e02d]>
+[Fei] 2019-03-01 10:22:33,240 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x39c8e02d, /127.0.0.1:12457 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 10:22:33,279 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 10:22:33,282 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 10:22:33,333 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 10:24:42,153 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@4704217b>
+[Fei] 2019-03-01 10:25:46,242 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x7412a3cf]>
+[Fei] 2019-03-01 10:25:46,264 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x7412a3cf, /127.0.0.1:14471 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 10:25:46,358 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 10:25:46,360 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 10:36:16,393 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@26170289>
+[Fei] 2019-03-01 10:36:17,229 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x90cf7608]>
+[Fei] 2019-03-01 10:36:17,242 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x90cf7608, /127.0.0.1:7014 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 10:36:17,335 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 10:36:17,338 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 10:37:46,828 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 10:48:37,410 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@59533c8>
+[Fei] 2019-03-01 10:48:38,080 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x2fc6f298]>
+[Fei] 2019-03-01 10:48:38,089 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x2fc6f298, /127.0.0.1:1424 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 10:48:38,146 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 10:48:38,149 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 10:48:38,193 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 11:20:49,164 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@26170289>
+[Fei] 2019-03-01 11:20:50,019 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xb3136a2c]>
+[Fei] 2019-03-01 11:20:50,030 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xb3136a2c, /127.0.0.1:9358 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:20:50,082 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:20:50,084 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:21:43,996 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 11:22:17,121 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@27dd93ac>
+[Fei] 2019-03-01 11:22:17,942 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xaece8db7]>
+[Fei] 2019-03-01 11:22:17,951 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xaece8db7, /127.0.0.1:10265 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:22:17,999 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:22:18,002 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:22:40,015 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Mar 01 11:22:40 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-01 11:22:40,162 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-01 11:22:40,457 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-01 11:22:40,457 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-01 11:22:40,466 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 11:22:40 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 11:22:40,466 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-01 11:22:41,416 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 11:22:41,417 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 11:22:41,418 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-01 11:22:41,849 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 11:22:40 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 11:22:41,944 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 11:22:40 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 11:22:42,049 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-01 11:22:42,052 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-01 11:22:42,053 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-01 11:22:42,174 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 1717 ms>
+[Fei] 2019-03-01 11:22:43,601 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-01 11:22:55,297 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@66f28e37>
+[Fei] 2019-03-01 11:22:56,089 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x004ce698]>
+[Fei] 2019-03-01 11:22:56,100 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x004ce698, /127.0.0.1:10707 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:22:56,277 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:22:56,387 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:25:06,545 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result = true>
+[Fei] 2019-03-01 11:27:46,274 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@59533c8>
+[Fei] 2019-03-01 11:27:47,014 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x138218f4]>
+[Fei] 2019-03-01 11:27:47,024 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x138218f4, /127.0.0.1:14093 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:27:47,069 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:27:47,073 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:27:47,131 [ INFO] [TestRpcInterfaceFactory2.java              53] - <result####### = true>
+[Fei] 2019-03-01 11:28:26,013 [ INFO] [TestRpcInterfaceFactory2.java              48] - <java.lang.Object@4644f672>
+[Fei] 2019-03-01 11:28:26,825 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x2d2cbd19]>
+[Fei] 2019-03-01 11:28:26,839 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x2d2cbd19, /127.0.0.1:14469 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:28:26,931 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:28:26,934 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:30:40,210 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x80b36e59]>
+[Fei] 2019-03-01 11:30:40,223 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x80b36e59, /127.0.0.1:2124 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:30:40,278 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:30:40,280 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:30:40,315 [ INFO] [TestRpcInterfaceFactory2.java              40] - <result = true>
+[Fei] 2019-03-01 11:32:11,648 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x96704207]>
+[Fei] 2019-03-01 11:32:11,670 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x96704207, /127.0.0.1:3262 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 11:32:11,712 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test#0>
+[Fei] 2019-03-01 11:32:11,715 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>
+[Fei] 2019-03-01 11:32:11,754 [ INFO] [TestRpcInterfaceFactory2.java              40] - <result = true>
+[Fei] 2019-03-01 13:34:04,373 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x3bd8fe93]>
+[Fei] 2019-03-01 13:37:18,173 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x6b96f819]>
+[Fei] 2019-03-01 13:37:19,192 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:19,204 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xe179a4b6]>
+[Fei] 2019-03-01 13:37:20,212 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:20,222 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xc3a44bd2]>
+[Fei] 2019-03-01 13:37:21,229 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:21,234 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x2fb6c577]>
+[Fei] 2019-03-01 13:37:22,236 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:22,242 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xa9821e68]>
+[Fei] 2019-03-01 13:37:23,253 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:23,257 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x89b2843d]>
+[Fei] 2019-03-01 13:37:24,270 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:24,274 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x98c324c4]>
+[Fei] 2019-03-01 13:37:25,275 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:25,285 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x5aaf29bf]>
+[Fei] 2019-03-01 13:37:26,290 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:26,296 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xeccdb20a]>
+[Fei] 2019-03-01 13:37:26,634 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Fri Mar 01 13:37:26 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-01 13:37:26,799 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-01 13:37:27,074 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-01 13:37:27,074 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-01 13:37:27,080 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 13:37:27 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 13:37:27,081 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-01 13:37:27,298 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:27,307 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xedc1d35a]>
+[Fei] 2019-03-01 13:37:28,258 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 13:37:28,260 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-01 13:37:28,260 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-01 13:37:28,311 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:28,313 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xa503b3b4]>
+[Fei] 2019-03-01 13:37:28,829 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 13:37:27 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 13:37:28,985 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Fri Mar 01 13:37:27 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-01 13:37:29,120 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-01 13:37:29,124 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-01 13:37:29,125 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-01 13:37:29,126 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-01 13:37:29,267 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2192 ms>
+[Fei] 2019-03-01 13:37:29,314 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:29,325 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x1b6ae972]>
+[Fei] 2019-03-01 13:37:30,336 [ERROR] [ErrorLog.java                              22] - <java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080	java.net.ConnectException: Connection refused: no further information: /127.0.0.1:8080
+	io.netty.util.concurrent.AbstractFuture.get(AbstractFuture.java:41)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.openChannel(NettySenderV2.java:63)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.getChannel(NettySenderV2.java:95)
+	com.fei.netty.springmvc.rpc.socketrpc.sender.NettySenderV2.sendRequest(NettySenderV2.java:101)
+	com.fei.netty.springmvc.rpc.RpcInterfaceFactory2$RpcInterfaceProxyHandler.invoke(RpcInterfaceFactory2.java:95)
+	com.sun.proxy.$Proxy3.testStr(Unknown Source)
+	com.fei.test.TestRpcInterfaceFactory2.testArgs(TestRpcInterfaceFactory2.java:44)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+>
+[Fei] 2019-03-01 13:37:30,341 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xc89e41fa]>
+[Fei] 2019-03-01 13:37:30,794 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-01 13:37:30,835 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xc89e41fa, /127.0.0.1:4955 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 13:37:30,998 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test/str#0>
+[Fei] 2019-03-01 13:37:31,044 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.	Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-01 13:38:22,502 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x41a19040]>
+[Fei] 2019-03-01 13:38:22,517 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x41a19040, /127.0.0.1:5674 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 13:38:22,566 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test/str#0>
+[Fei] 2019-03-01 13:38:22,569 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.	Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-01 13:43:43,649 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x7600c99d]>
+[Fei] 2019-03-01 13:43:43,675 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x7600c99d, /127.0.0.1:9636 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 13:43:43,732 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test/str#10>
+[Fei] 2019-03-01 13:43:43,735 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.	Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-01 13:44:39,030 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x753a1d4b]>
+[Fei] 2019-03-01 13:44:39,050 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x753a1d4b, /127.0.0.1:10260 => /127.0.0.1:8080]>
+[Fei] 2019-03-01 13:44:39,122 [ INFO] [RpcLog.java                                16] - <rpcRequest#1#/rpc/test/test/str#10>
+[Fei] 2019-03-01 13:47:24,326 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.	Request processing failed; nested exception is java.lang.IllegalArgumentException: Name for argument type [java.lang.String] not available, and parameter name information not found in class file either.
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 16:36:00,279 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Sat Mar 02 16:36:00 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-02 16:36:00,482 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-02 16:36:00,972 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-02 16:36:00,973 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-02 16:36:00,979 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:36:00 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:36:00,980 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-02 16:36:02,349 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 16:36:02,351 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 16:36:02,352 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-02 16:36:02,860 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:36:00 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:36:02,939 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:36:00 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:36:03,047 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-02 16:36:03,050 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 16:36:03,051 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 16:36:03,051 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-02 16:36:03,052 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-02 16:36:03,126 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2153 ms>
+[Fei] 2019-03-02 16:36:04,573 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-02 16:37:57,754 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Sat Mar 02 16:37:57 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-02 16:37:57,899 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-02 16:37:58,179 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-02 16:37:58,179 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-02 16:37:58,184 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:37:58 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:37:58,185 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-02 16:37:59,215 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 16:37:59,217 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 16:37:59,218 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-02 16:37:59,749 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:37:58 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:37:59,831 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 16:37:58 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 16:37:59,953 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-02 16:37:59,956 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 16:37:59,957 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/a,bean=com.fei.test.RpcTestImple,method=testA}>
+[Fei] 2019-03-02 16:37:59,957 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-02 16:37:59,958 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-02 16:38:00,096 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 1916 ms>
+[Fei] 2019-03-02 16:38:01,707 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-02 16:39:54,346 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xb5782478]>
+[Fei] 2019-03-02 16:39:54,361 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xb5782478, /127.0.0.1:12774 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 16:39:54,560 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 16:39:54,609 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 16:50:19,212 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xb43673b7]>
+[Fei] 2019-03-02 16:50:19,227 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xb43673b7, /127.0.0.1:5412 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 16:50:19,279 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 16:50:19,281 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 16:50:47,212 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x86f6eebf]>
+[Fei] 2019-03-02 16:50:47,253 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x86f6eebf, /127.0.0.1:5957 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 16:50:47,278 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 16:53:27,448 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 16:53:38,775 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xb5803b14]>
+[Fei] 2019-03-02 16:53:38,797 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xb5803b14, /127.0.0.1:8066 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 16:53:38,861 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 16:54:10,220 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 16:54:19,491 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x8e0e6de3]>
+[Fei] 2019-03-02 16:54:19,514 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x8e0e6de3, /127.0.0.1:8387 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 16:54:19,578 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 16:56:17,889 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:00:18,307 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xe1f162ca]>
+[Fei] 2019-03-02 17:00:18,318 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xe1f162ca, /127.0.0.1:12264 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:00:18,372 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:01:01,345 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:01:11,296 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xcede8769]>
+[Fei] 2019-03-02 17:01:11,311 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xcede8769, /127.0.0.1:12770 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:01:11,380 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:01:49,921 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:01:57,494 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x5564fd7a]>
+[Fei] 2019-03-02 17:01:57,511 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x5564fd7a, /127.0.0.1:13278 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:01:57,562 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:02:28,349 [ WARN] [DefaultChannelPipeline.java              1000] - <An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.>
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+[Fei] 2019-03-02 17:12:32,301 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Sat Mar 02 17:12:32 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-02 17:12:32,461 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-02 17:12:32,818 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-02 17:12:32,819 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-02 17:12:32,823 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:12:32 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:12:32,824 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-02 17:12:33,895 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:12:33,897 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:12:33,898 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-02 17:12:34,496 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:12:32 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:12:34,587 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:12:32 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:12:34,704 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-02 17:12:34,706 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 17:12:34,707 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/a,bean=com.fei.test.RpcTestImple,method=testA}>
+[Fei] 2019-03-02 17:12:34,708 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-02 17:12:34,709 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-02 17:12:34,826 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2007 ms>
+[Fei] 2019-03-02 17:12:36,368 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-02 17:14:22,494 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Sat Mar 02 17:14:22 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-02 17:14:22,668 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-02 17:14:23,047 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-02 17:14:23,047 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-02 17:14:23,053 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:14:23 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:14:23,054 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-02 17:14:24,079 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:14:24,083 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:14:24,084 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-02 17:14:24,813 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:14:23 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:14:24,898 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:14:23 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:14:25,104 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-02 17:14:25,108 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 17:14:25,109 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/a,bean=com.fei.test.RpcTestImple,method=testA}>
+[Fei] 2019-03-02 17:14:25,110 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-02 17:14:25,112 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-02 17:14:25,266 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2219 ms>
+[Fei] 2019-03-02 17:14:26,783 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-02 17:14:34,567 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xf19f27b6]>
+[Fei] 2019-03-02 17:14:34,578 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xf19f27b6, /127.0.0.1:7961 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:14:34,811 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:15:10,756 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:15:21,835 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xd710dd83]>
+[Fei] 2019-03-02 17:15:21,935 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xd710dd83, /127.0.0.1:8415 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:15:22,041 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:16:02,188 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:18:48,737 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xcc3f40a8]>
+[Fei] 2019-03-02 17:18:48,780 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xcc3f40a8, /127.0.0.1:10353 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:18:48,908 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:19:27,388 [ERROR] [ErrorLog.java                              22] - <Request processing failed; nested exception is java.lang.NullPointerException	Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:19:44,318 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xa562a547]>
+[Fei] 2019-03-02 17:19:44,330 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xa562a547, /127.0.0.1:10969 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:19:44,388 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:21:12,365 [ERROR] [ErrorLog.java                              22] - <Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''	Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''
+	org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1262)
+	org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:21:45,003 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xa4c211c7]>
+[Fei] 2019-03-02 17:21:45,022 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xa4c211c7, /127.0.0.1:12467 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:21:45,047 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:21:45,051 [ERROR] [ErrorLog.java                              22] - <Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''	Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''
+	org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1262)
+	org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:27:34,269 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0x8529d817]>
+[Fei] 2019-03-02 17:27:34,282 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0x8529d817, /127.0.0.1:2123 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:27:34,339 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:27:34,343 [ERROR] [ErrorLog.java                              22] - <Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''	Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''
+	org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1262)
+	org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:27:55,233 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xe721b92a]>
+[Fei] 2019-03-02 17:27:55,246 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xe721b92a, /127.0.0.1:2360 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:27:55,292 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:27:55,300 [ERROR] [ErrorLog.java                              22] - <Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''	Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''
+	org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1262)
+	org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:29:37,172 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xb2b18ec8]>
+[Fei] 2019-03-02 17:29:37,198 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xb2b18ec8, /127.0.0.1:3537 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:29:37,293 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:29:37,298 [ERROR] [ErrorLog.java                              22] - <Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''	Could not resolve view with name 'TestDto1 [a=1, b=b] TestDto2 [c=2, d=d]qwertygfdsa' in servlet with name ''
+	org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1262)
+	org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	com.fei.netty.springmvc.handler.HttpServerHanderV2.channelRead(HttpServerHanderV2.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcServerShakeHandHandler.channelRead(RpcServerShakeHandHandler.java:40)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	com.fei.netty.springmvc.rpc.handler.server.RpcRequestToHttpHandler.channelRead(RpcRequestToHttpHandler.java:31)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:909)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.lang.Thread.run(Unknown Source)
+>
+[Fei] 2019-03-02 17:33:40,882 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing Root WebApplicationContext: startup date [Sat Mar 02 17:33:40 CST 2019]; root of context hierarchy>
+[Fei] 2019-03-02 17:33:41,023 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from file [D:\workspace\eclipse_work_space\netty-springmvc\target\test-classes\spring-service.xml]>
+[Fei] 2019-03-02 17:33:41,310 [ INFO] [DefaultServletContext.java                378] - <Initializing Spring FrameworkServlet ''>
+[Fei] 2019-03-02 17:33:41,311 [ INFO] [FrameworkServlet.java                     489] - <FrameworkServlet '': initialization started>
+[Fei] 2019-03-02 17:33:41,317 [ INFO] [AbstractApplicationContext.java           582] - <Refreshing WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:33:41 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:33:41,317 [ INFO] [XmlBeanDefinitionReader.java              317] - <Loading XML bean definitions from class path resource [servlet.xml]>
+[Fei] 2019-03-02 17:33:42,417 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/get],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:33:42,419 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/post],methods=[POST]}" onto public com.fei.test.Test com.fei.test.TestController.testPost(com.fei.test.Test,javax.servlet.http.HttpServletResponse)>
+[Fei] 2019-03-02 17:33:42,421 [ INFO] [AbstractHandlerMethodMapping.java         543] - <Mapped "{[/test/session],methods=[GET]}" onto public com.fei.test.Test com.fei.test.TestController.testSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)>
+[Fei] 2019-03-02 17:33:43,161 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:33:41 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:33:43,297 [ INFO] [RequestMappingHandlerAdapter.java         534] - <Looking for @ControllerAdvice: WebApplicationContext for namespace '-servlet': startup date [Sat Mar 02 17:33:41 CST 2019]; parent: Root WebApplicationContext>
+[Fei] 2019-03-02 17:33:43,437 [ INFO] [RpcRequestHandlerMapping.java              58] - <===========================start parse rpc cmd================================>
+[Fei] 2019-03-02 17:33:43,441 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test,bean=com.fei.test.RpcTestImple,method=test}>
+[Fei] 2019-03-02 17:33:43,442 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/a,bean=com.fei.test.RpcTestImple,method=testA}>
+[Fei] 2019-03-02 17:33:43,443 [ INFO] [RpcRequestHandlerMapping.java              70] - <mapping {cmd=/rpc/test/test/str,bean=com.fei.test.RpcTestImple,method=testStr}>
+[Fei] 2019-03-02 17:33:43,445 [ INFO] [RpcRequestHandlerMapping.java              75] - <===========================end parse rpc cmd================================>
+[Fei] 2019-03-02 17:33:43,646 [ INFO] [FrameworkServlet.java                     508] - <FrameworkServlet '': initialization completed in 2335 ms>
+[Fei] 2019-03-02 17:33:45,296 [ INFO] [NettyBootstrapV2.java                      73] - <server start port=8080>
+[Fei] 2019-03-02 17:33:58,646 [ INFO] [RpcClientShakeHand.java                    41] - <===add promise======[id: 0xc35f991e]>
+[Fei] 2019-03-02 17:33:58,658 [ INFO] [NettySenderV2.java                         66] - <acvtive channel[id: 0xc35f991e, /127.0.0.1:6364 => /127.0.0.1:8080]>
+[Fei] 2019-03-02 17:33:58,822 [ INFO] [RpcLog.java                                16] - <rpcRequest#41>
+[Fei] 2019-03-02 17:33:58,926 [ INFO] [RpcLog.java                                22] - <rpcResponse#1#0>

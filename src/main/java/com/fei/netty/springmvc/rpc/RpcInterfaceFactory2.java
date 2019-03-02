@@ -11,6 +11,7 @@ import java.util.Set;
 import com.fei.netty.springmvc.conf.Configuration;
 import com.fei.netty.springmvc.converter.Converter;
 import com.fei.netty.springmvc.converter.ConverterException;
+import com.fei.netty.springmvc.converter.MethodParameterConverter;
 import com.fei.netty.springmvc.future.RFuture;
 import com.fei.netty.springmvc.future.RFutureListener;
 import com.fei.netty.springmvc.rpc.common.RequestIdGenerator;
@@ -29,6 +30,8 @@ public class RpcInterfaceFactory2 {
 	private UrlGenerator generator ; 
 	
 	private Converter converter ; 
+	
+	private MethodParameterConverter methodParameterConverter ; 
 	
 	private RequestIdGenerator idGenerator ; 
 	
@@ -53,6 +56,7 @@ public class RpcInterfaceFactory2 {
 		this.senderFactory = conf.getRpcConf().getSenderFactory() ;
 		this.idGenerator = conf.getRpcConf().getIdGenerator() ;
 		this.allocator = conf.getAllocator() ; 
+		this.methodParameterConverter = conf.getRpcConf().getMethodParameterConverter() ;  
 	}
 
 	
@@ -90,7 +94,8 @@ public class RpcInterfaceFactory2 {
 				String url = generator.generate(method) ;
 				Type type = method.getGenericReturnType()  ;
 				byte[] bytes = generateArgBytes(args,method) ;
-				ByteBuf data = allocator.buffer(bytes.length) ; 
+				ByteBuf data = allocator.buffer(bytes.length) ;
+				data.writeBytes(bytes) ; 
 				RpcRequest request = new RpcRequest(idGenerator.getRequestId(), url, data) ;
 				RFuture<RpcResponse> future = sender.sendRequest(request) ; 
 				if(aync){
@@ -134,16 +139,7 @@ public class RpcInterfaceFactory2 {
 		}
 
 		private byte[] generateArgBytes(Object[] args, Method method) throws ConverterException {
-			byte[] bytes = null ; 
-			int len = method.getParameterCount() ;  
-			if(len ==0){
-				bytes = new byte[0] ; 
-			}else if(len == 1){
-				bytes = converter.writeValue(args[0]) ; 
-			}else{
-				bytes = converter.writeValue(Arrays.copyOf(args,len)) ; 
-			}
-			return bytes ; 
+			return methodParameterConverter.serialize(method, args) ; 
 		}
 
 		//检测最后的一个参数是否有callBack

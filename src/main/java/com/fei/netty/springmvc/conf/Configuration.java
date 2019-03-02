@@ -1,5 +1,7 @@
 package com.fei.netty.springmvc.conf;
 
+import com.fei.netty.springmvc.converter.MethodParameterConverter;
+
 import io.netty.buffer.ByteBufAllocator;
 
 public class Configuration implements Initializer{
@@ -44,5 +46,6 @@ public class Configuration implements Initializer{
 		this.rpcConf.ini();  
 		this.springConf.ini();
 	}
+
 	
 }

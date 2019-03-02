@@ -11,8 +11,8 @@ public class RpcRequestEncoder extends MessageToByteEncoder<RpcRequest>{
 
 	@Override
 	protected void encode(ChannelHandlerContext ctx, RpcRequest request, ByteBuf out) throws Exception {
-		ByteBuf data = request.getData() ; 
-		int dataLen = data.readableBytes() + 36 ; 
+		byte[] data = request.getData() ; 
+		int dataLen = data.length + 36 ; 
 		byte[] bytes = request.getCommand().getBytes() ; 
 		if(bytes.length > 32){
 			ErrorLog.getLogger().error("command to large" + request.getCommand());

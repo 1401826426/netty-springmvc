@@ -7,7 +7,7 @@ public interface Executor {
 	
 	<T> T query(String sql,List<Param> params)  throws SQLException; 
 	
-	<T> T query(String sql,List<Param> params,ResultSetHandler<T> handler)  throws SQLException ; 
+	<T> T query(String sql,List<Param> params,ResultSetHandler handler)  throws SQLException ; 
 	
 	void insert(String sql,List<Param> params)  throws SQLException; 
 	
